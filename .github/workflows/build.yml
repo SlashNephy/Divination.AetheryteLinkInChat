@@ -47,7 +47,7 @@ jobs:
           DALAMUD_ZIP_URL: https://goatcorp.github.io/dalamud-distrib/net5/latest.zip
 
       - name: Restore Nuget Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.nuget/packages
           key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
