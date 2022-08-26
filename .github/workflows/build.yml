@@ -68,7 +68,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore --nologo -maxcpucount:1 /p:OutputPath=bin\CIRelease\ /p:Product=Divination /p:Company=Horoscope '/p:Copyright="${{ env.PLUGIN_AUTHOR }}"' '/p:AssemblyTitle="${{ env.PLUGIN_DESCRIPTION }}"'
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ env.PLUGIN_PROJECT_NAME }}
           path: ${{ env.PLUGIN_PROJECT_NAME }}\bin\CIRelease\${{ env.PLUGIN_PROJECT_NAME }}
