@@ -91,7 +91,7 @@ jobs:
         id: short-sha
 
       - name: Download Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: ${{ env.PLUGIN_PROJECT_NAME }}
           path: dist/testing/${{ env.PLUGIN_PROJECT_NAME }}
