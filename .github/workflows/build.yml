@@ -87,7 +87,7 @@ jobs:
           token: ${{ secrets.GH_PAT }}
 
       - name: Prepare Short SHA
-        uses: benjlevesque/short-sha@v1.2
+        uses: benjlevesque/short-sha@v2.1
         id: short-sha
 
       - name: Download Artifact
